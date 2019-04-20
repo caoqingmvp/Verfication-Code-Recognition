@@ -122,7 +122,7 @@ def train():
             vali_accuracy = accuracy.eval(feed_dict=feed_dict_val)
             print("step {}, training accuracy {} , validation accuracy {}, training loss {}" .format(i, train_accuracy, vali_accuracy, train_loss))
 
-            if train_accuracy > 0.95:
+            if train_accuracy > 0.91:
                 saver.save(sess, '/scratch/user/caoqing2017/Verfication_Code/output.model', global_step=i)
 
 
